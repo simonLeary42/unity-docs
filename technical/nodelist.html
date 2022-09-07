@@ -1,0 +1,992 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.4.3">
+    
+    
+      
+        <title>Node List - Unity Cluster Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6b80c2a2.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#node-list" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../index.html" title="Unity Cluster Documentation" class="md-header__button md-logo" aria-label="Unity Cluster Documentation" data-md-component="logo">
+      
+  <img src="../res/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Unity Cluster Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Node List
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/UMass-RC/unity-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="Unity Cluster Documentation" class="md-nav__button md-logo" aria-label="Unity Cluster Documentation" data-md-component="logo">
+      
+  <img src="../res/logo.png" alt="logo">
+
+    </a>
+    Unity Cluster Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/UMass-RC/unity-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Getting Started
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Getting Started" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Getting Started
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_1" type="checkbox" id="__nav_2_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_1">
+          Connecting
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Connecting" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          Connecting
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../connecting/ssh.html" class="md-nav__link">
+        Console - SSH
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../connecting/jupyter.html" class="md-nav__link">
+        Web - JupyterLab
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../uploading-files/index.html" class="md-nav__link">
+        Uploading Files
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_3">
+          Job Scheduling
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Job Scheduling" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          Job Scheduling
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../slurm/index.html" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../slurm/srun.html" class="md-nav__link">
+        SRUN Jobs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../slurm/sbatch.html" class="md-nav__link">
+        SBATCH Jobs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mpi.html" class="md-nav__link">
+        MPI
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" type="checkbox" id="__nav_2_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_4">
+          Software
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Software" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          Software
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modules/index.html" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modules/using.html" class="md-nav__link">
+        Using Modules
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq.html" class="md-nav__link">
+        FAQ
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Cluster Information
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Cluster Information" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Cluster Information
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Node List
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="nodelist.html" class="md-nav__link md-nav__link--active">
+        Node List
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cpu-nodes" class="md-nav__link">
+    CPU Nodes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gpu-nodes" class="md-nav__link">
+    GPU Nodes
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="partitionlist.html" class="md-nav__link">
+        Partition List
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="storage.html" class="md-nav__link">
+        Storage
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Buy-In Hardware
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Buy-In Hardware" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Buy-In Hardware
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../buy-in/types.html" class="md-nav__link">
+        Types of Priority
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../buy-in/requirements.html" class="md-nav__link">
+        Hardware Requirements
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cpu-nodes" class="md-nav__link">
+    CPU Nodes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gpu-nodes" class="md-nav__link">
+    GPU Nodes
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+  <a href="https://github.com/UMass-RC/unity-docs/edit/master/docs/technical/nodelist.md" title="Edit this page" class="md-content__button md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+<h1 id="node-list">Node List</h1>
+<p>The Unity cluster is a heterogeneous cluster. We plan to keep it a heterogeneous cluster. To clear confusion, a node list is below, with slurm constraints to refine your node selection.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+</div>
+<p>You can use the <code>-C</code> flag in your slurm jobs to batch your jobs to a specific set of nodes. If you don't include a constraint, your job may land in any number of nodes in the partition.</p>
+<h3 id="cpu-nodes">CPU Nodes</h3>
+<!-- BEGIN INCLUDE ../../sheets-to-md/output/cpu-nodes.md -->
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Model</th>
+<th align="left">CPU</th>
+<th align="left">RAM</th>
+<th align="left">Partitions</th>
+<th align="left">Constraints</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">cpu[001-008]</td>
+<td align="left">Lenovo ThinkSystem SD530</td>
+<td align="left">2x Intel Xeon Gold 6126 (12 Cores 24 Threads)</td>
+<td align="left">192 GiB (Node(s) 15-8) 384 GiB (Nodes 2-4)</td>
+<td align="left"><ul><li>cpu</li><li>cpu-long</li></ul></td>
+<td align="left"><ul><li>len-sd530_2018</li><li>avx</li><li>avx2</li><li>avx512</li><li>intel</li><li>linux-ubuntu20.04-skylake_avx512</li></ul></td>
+</tr>
+<tr>
+<td align="left">cpu[013-025]</td>
+<td align="left">Dell Poweredge R640</td>
+<td align="left">2x Intel Xeon Gold 6148 (20 Cores 40 Threads)</td>
+<td align="left">192 GiB</td>
+<td align="left"><ul><li>cpu</li><li>cpu-long</li></ul></td>
+<td align="left"><ul><li>dell-r640_2020</li><li>avx</li><li>avx2</li><li>avx512</li><li>intel</li><li>linux-ubuntu20.04-skylake_avx512</li></ul></td>
+</tr>
+<tr>
+<td align="left">ceewater-cpu[001-007]</td>
+<td align="left">Lenovo ThinkSystem SR635</td>
+<td align="left">1x AMD EPYC-Rome 7402 (24 Cores 48 Threads)</td>
+<td align="left">128 GiB</td>
+<td align="left"><ul><li>ceewater_cjgleason-cpu</li><li>ceewater_casey-cpu</li><li>ceewater_kandread-cpu</li><li>cpu-preempt</li></ul></td>
+<td align="left"><ul><li>ceewater_len-sr635_2020</li><li>avx</li><li>avx2</li><li>amd</li><li>linux-ubuntu20.04-zen2</li></ul></td>
+</tr>
+<tr>
+<td align="left">astroth-cpu[001-008]</td>
+<td align="left">SuperMicro SBI-4429P</td>
+<td align="left">2x Xeon Silver 4215R (8 Cores 16 Threads)</td>
+<td align="left">192 GiB</td>
+<td align="left"><ul><li>astroth-cpu</li><li>cpu-preempt</li></ul></td>
+<td align="left"><ul><li>astroth_smicro-sbi4429p_2021</li><li>avx</li><li>avx2</li><li>avx512</li><li>intel</li><li>linux-ubuntu20.04-cascadelake</li></ul></td>
+</tr>
+<tr>
+<td align="left">zhoulin-cpu[001-006]</td>
+<td align="left">Lenovo SR645</td>
+<td align="left">2x AMD EPYC 7702 (128 Cores 256 Threads)</td>
+<td align="left">512 GiB</td>
+<td align="left"><ul><li>zhoulin-cpu</li><li>cpu-preempt</li></ul></td>
+<td align="left"><ul><li>zhoulin_len-sr645_2021</li><li>avx</li><li>avx2</li><li>amd</li><li>linux-ubuntu20.04-zen2</li></ul></td>
+</tr>
+<tr>
+<td align="left">toltec-cpu[001-006]</td>
+<td align="left">Dell R640</td>
+<td align="left">2x Intel Xeon Gold 5218 CPU (32 Cores 64 Threads)</td>
+<td align="left">383 GiB</td>
+<td align="left"><ul><li>toltec-cpu</li><li>cpu-preempt</li></ul></td>
+<td align="left"><ul><li>toltec_dell-r640_2021</li><li>avx</li><li>avx2</li><li>avx512</li><li>intel</li><li>linux-ubuntu20.04-cascadelake</li></ul></td>
+</tr>
+<tr>
+<td align="left">gaoseismolab-cpu[001-005]</td>
+<td align="left">Lenovo SR630 v2</td>
+<td align="left">2x Intel Xeon Platinum 8358 (32 Cores 64 Threads)</td>
+<td align="left">512 GiB</td>
+<td align="left"><ul><li>gaoseismolab-cpu</li><li>cpu-preempt</li></ul></td>
+<td align="left"><ul><li>avx</li><li>avx2</li><li>avx512</li><li>intel</li><li>linux-ubuntu20.04-icelake</li></ul></td>
+</tr>
+<tr>
+<td align="left">uri-cpu[001-005]</td>
+<td align="left">Intel S2600BPB</td>
+<td align="left">2x Intel Xeon Gold 6238R (28 Cores 56 Threads)</td>
+<td align="left">512 GiB</td>
+<td align="left"><ul><li>uri-cpu</li><li>cpu</li><li>cpu-long</li></ul></td>
+<td align="left"><ul><li>avx</li><li>avx2</li><li>avx512</li><li>intel</li><li>linux-ubuntu20.04-cascadelake</li></ul></td>
+</tr>
+</tbody>
+</table>
+<!-- END INCLUDE -->
+
+<h3 id="gpu-nodes">GPU Nodes</h3>
+<!-- BEGIN INCLUDE ../../sheets-to-md/output/gpu-nodes.md -->
+<table>
+<thead>
+<tr>
+<th align="left">Name</th>
+<th align="left">Model</th>
+<th align="left">CPU</th>
+<th align="left">GPU</th>
+<th align="left">RAM</th>
+<th align="left">Partitions</th>
+<th align="left">Constraints</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">gpu[001-002]</td>
+<td align="left">Lenovo ThinkSystem SR650</td>
+<td align="left">2x Intel Xeon Silver 4110 (8 Cores 16 Threads)</td>
+<td align="left">2x NVIDIA Tesla V100 (16GB VRAM)</td>
+<td align="left">192 GiB</td>
+<td align="left"><ul><li>gpu</li><li>gpu-long</li></ul></td>
+<td align="left"><ul><li>len-sr650_2018</li><li>avx</li><li>avx2</li><li>avx512</li><li>v100</li><li>intel</li><li>linux-ubuntu20.04-skylake_avx512</li></ul></td>
+</tr>
+<tr>
+<td align="left">gpu[003-004]</td>
+<td align="left">Dell Poweredge R740</td>
+<td align="left">2x Intel Xeon Gold 6140 (18 Cores 36 Threads)</td>
+<td align="left">2x NVIDIA Tesla V100 (16GB VRAM)</td>
+<td align="left">192 GiB</td>
+<td align="left"><ul><li>gpu</li><li>gpu-long</li></ul></td>
+<td align="left"><ul><li>len-sr650_2018</li><li>avx</li><li>avx2</li><li>avx512</li><li>v100</li><li>intel</li><li>linux-ubuntu20.04-skylake_avx512</li></ul></td>
+</tr>
+<tr>
+<td align="left">ials-gpu[001-033]</td>
+<td align="left">Atipa</td>
+<td align="left">2x Intel Xeon Silver 4214R (12 Cores 12 Threads)</td>
+<td align="left">8x NVIDIA RTX 2080ti (12GB VRAM)</td>
+<td align="left">192 GiB</td>
+<td align="left"><ul><li>ials-gpu</li><li>gpu</li><li>gpu-long</li></ul></td>
+<td align="left"><ul><li>ials_gigabyte_2020</li><li>avx</li><li>avx2</li><li>avx512</li><li>2080ti</li><li>intel</li><li>linux-ubuntu20.04-cascadelake</li></ul></td>
+</tr>
+<tr>
+<td align="left">astroth-gpu[001-003]</td>
+<td align="left">ASRock</td>
+<td align="left">AMD Ryzen Threadripper 1900X (8 Cores 16 Threads)</td>
+<td align="left">2x NVIDIA RTX 2080 (8GB VRAM)</td>
+<td align="left">32 GiB</td>
+<td align="left"><ul><li>astroth-gpu</li></ul></td>
+<td align="left"><ul><li>astro_asrock_x399_2020</li><li>avx</li><li>avx2</li><li>2080</li><li>amd</li><li>linux-ubuntu20.04-zen</li></ul></td>
+</tr>
+<tr>
+<td align="left">ece-gpu[001-002]</td>
+<td align="left">Lenovo SR670</td>
+<td align="left">2x Intel Xeon Gold 6226R CPU (64 Cores 128 Threads)</td>
+<td align="left">4x NVIDIA Tesla A100</td>
+<td align="left">384 GiB</td>
+<td align="left"><ul><li>ece-gpu</li></ul></td>
+<td align="left"><ul><li>ece_len-sr670_2021</li><li>avx</li><li>avx2</li><li>avx512</li><li>a100</li><li>intel</li></ul></td>
+</tr>
+<tr>
+<td align="left">gypsum-gpu[001-025]</td>
+<td align="left">ASUSTeK ESC4000 G3 Series</td>
+<td align="left">2x Intel Xeon E5-2620 v3 (12 Cores 24 Threads)</td>
+<td align="left">4x NVIDIA Tesla M40</td>
+<td align="left">256 GiB</td>
+<td align="left"><ul><li>gypsum-m40-phd</li><li>gypsum-m40-ms</li><li>gypsum-m40-course</li><li>gpu-preempt</li></ul></td>
+<td align="left"><ul><li>linux-ubuntu20.04-haswell</li></ul></td>
+</tr>
+<tr>
+<td align="left">gypsum-gpu[026-099]</td>
+<td align="left">ASUSTeK ESC4000 G3 Series</td>
+<td align="left">2x Intel Xeon E5-2620 v3 (12 Cores 24 Threads)</td>
+<td align="left">4x NVIDIA GeForce GTX TITAN X</td>
+<td align="left"></td>
+<td align="left"><ul><li>gypsum-titanx-phd</li><li>gypsum-titanx-ms</li><li>gypsum-titanx-course</li><li>gpu-preempt</li></ul></td>
+<td align="left"><ul><li>linux-ubuntu20.04-haswell</li></ul></td>
+</tr>
+<tr>
+<td align="left">gypsum-gpu[104-156]</td>
+<td align="left">TYAN B7109F77DV14HR-2T-N</td>
+<td align="left">2x Intel Xeon Silver 4116 (24 Cores 48 Threads)</td>
+<td align="left">8x NVIDIA GeForce GTX 1080 Ti</td>
+<td align="left">384 GiB</td>
+<td align="left"><ul><li>gypsum-1080ti-phd</li><li>gypsum-1080ti-ms</li><li>gypsum-1080ti-course</li><li>gpu-preempt</li></ul></td>
+<td align="left"><ul><li>linux-ubuntu20.04-skylake_avx512</li></ul></td>
+</tr>
+<tr>
+<td align="left">gypsum-gpu[157-181]</td>
+<td align="left">TYAN B7109F77DV14HR-2T-N</td>
+<td align="left">2x Intel Xeon Silver 4116 (24 Cores 48 Threads)</td>
+<td align="left">8x NVIDIA GeForce GTX 2080 Ti</td>
+<td align="left">384 GiB</td>
+<td align="left"><ul><li>gypsum-2080ti-phd</li><li>gypsum-2080ti-ms</li><li>gypsum-2080ti-course</li><li>gpu-preempt</li></ul></td>
+<td align="left"><ul><li>linux-ubuntu20.04-skylake_avx512</li></ul></td>
+</tr>
+<tr>
+<td align="left">gypsum-gpu[182-189]</td>
+<td align="left">Supermicro SYS-4029GP-TRT2</td>
+<td align="left">2x Intel Xeon Silver 4116 (24 Cores 48 Threads)</td>
+<td align="left">8x NVIDIA Quadro RTX 8000</td>
+<td align="left">384 GiB</td>
+<td align="left"><ul><li>gypsum-rtx8000-phd</li><li>gypsum-rtx8000-ms</li><li>gypsum-rtx8000-course</li><li>gpu-preempt</li></ul></td>
+<td align="left"><ul><li>linux-ubuntu20.04-skylake_avx512</li></ul></td>
+</tr>
+<tr>
+<td align="left">gypsum-gpu[190-192]</td>
+<td align="left">Supermicro SYS-4029GP-TRT2</td>
+<td align="left">2x Intel Xeon Silver 4116 (24 Cores 48 Threads)</td>
+<td align="left">8x NVIDIA GeForce GTX 2080 Ti</td>
+<td align="left">384 GiB</td>
+<td align="left"><ul><li>gypsum-2080ti-phd</li><li>gypsum-2080ti-ms</li><li>gypsum-2080ti-course</li><li>gpu-preempt</li></ul></td>
+<td align="left"><ul><li>linux-ubuntu20.04-skylake_avx512</li></ul></td>
+</tr>
+</tbody>
+</table>
+<!-- END INCLUDE -->
+
+
+
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../faq.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: FAQ" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              FAQ
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="partitionlist.html" class="md-footer__link md-footer__link--next" aria-label="Next: Partition List" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Partition List
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy;2020 UMass Amherst
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.ecf98df9.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.2ab50757.min.js"></script>
+      
+        <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
+      
+        <script src="../javascripts/tablesort.js"></script>
+      
+    
+  </body>
+</html>
