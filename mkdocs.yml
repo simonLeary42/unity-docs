@@ -10,6 +10,8 @@ use_directory_urls: false
 theme:
   name: material
   logo: res/logo.png
+extra:
+  homepage: https://unity.rc.umass.edu
 copyright: "Copyright &copy;2020 UMass Amherst"
 repo_url: https://github.com/UMass-RC/unity-docs
 edit_uri: "edit/main/docs"
